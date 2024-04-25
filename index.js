@@ -2,6 +2,7 @@ const express = require('express')
 const {connection, PORT} = require('./config/db')
 
 const { userRouter } = require("./routes/user_routes");
+const {astrologerRouter} = require("./routes/astrologer_routes");
 
 const app = express()
 app.use(express.json())
@@ -11,7 +12,7 @@ app.get('/', (_,res)=>{
 })
 
 app.use("/user",userRouter);
-
+app.use("/astrologer", astrologerRouter);
 
 app.listen(PORT, async()=>{
     try {
