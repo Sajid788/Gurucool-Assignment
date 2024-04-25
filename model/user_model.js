@@ -6,11 +6,11 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     birthdate: {
-        type: Date,
+        type: String,
         required: true
     }
 });
 
 const userModel = mongoose.model('User', UserSchema);
 
-exports.module = {userModel}
+module.exports = {userModel}
