@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 
 const AstrologerSchema = new mongoose.Schema({
@@ -14,10 +13,11 @@ const AstrologerSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-});
+  flowAdjustment: {
+    type: Number,
+    default: 0
+  }
+}, { timestamps: true });
 
 const AstrologerModel = mongoose.model('Astrologer', AstrologerSchema);
-module.exports = {AstrologerModel};
-
-
-
+module.exports = { AstrologerModel };

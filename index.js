@@ -3,6 +3,7 @@ const {connection, PORT} = require('./config/db')
 
 const { userRouter } = require("./routes/user_routes");
 const {astrologerRouter} = require("./routes/astrologer_routes");
+// const {flowRouter} = require('./controller/flow_controller');
 
 const app = express()
 app.use(express.json())
@@ -13,6 +14,7 @@ app.get('/', (_,res)=>{
 
 app.use("/user",userRouter);
 app.use("/astrologer", astrologerRouter);
+// app.use("/flow", flowRouter);
 
 app.listen(PORT, async()=>{
     try {

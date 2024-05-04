@@ -1,4 +1,3 @@
-// src/routes/astrologerRoutes.js
 const express = require("express");
 const {
   getAllAstrologers,
