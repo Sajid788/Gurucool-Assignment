@@ -1,6 +1,6 @@
 # Flow Distribution Algorithm
 
-# Design Algorithm:
+## Design Algorithm:
 - The algorithm is designed to allocate users to astrologers in an equitable and balanced manner.
 - It incorporates a mechanism to adjust the flow for top astrologers, enabling them to receive either more or fewer connections as needed.
 
