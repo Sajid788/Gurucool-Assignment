@@ -14,6 +14,11 @@
 - astrologerController.js and userController.js manage requests associated with astrologers and users.
 - flowDistributionService.js houses the algorithm for distributing users to astrologers.
 
+
+## Implementation
+- The algorithm is implemented in the flowDistributionService module.
+- The connectUserToTopAstrologer function links a user to the foremost astrologer according to their flow adjustment.
+
 ### Installation
 
 1. Clone this repository:
